@@ -16,52 +16,47 @@ body {
   margin: 0;
 }
 
+main ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 h1 {
   color: #623b0c;
   font-family: 'Denk One', sans-serif;
-  font-size: 1.5em;
 }
 
 h2 {
   color: #623b0c;
-  font-family: 'Denk One', sans-serif;
-  font-size: 1em;
+  font-family: "Denk One", sans-serif;
 }
 
 main ol {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5 1rem;
-}
-
-ol {
   list-style-type: none;
   padding: .5em;
 
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 1rem;
-padding-top: .75em;
+  padding: 0.5 1rem;
 }
 
 ol li {
-  width: 20em;
+width: 20em;
   padding: 1rem;
   background-color: #ede3db;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  border: 2px solid #623b0c;
+  border-radius: 8px;
 }
 
-
-@media only screen and (min-width: 40em) {
+/*@media only screen and (min-width: 40em) {
 
 ol {
     flex-direction: row;
     justify-content: space-between;
   }
-}
+}*/
