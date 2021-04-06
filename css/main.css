@@ -19,11 +19,11 @@ body {
 ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "main main";
-}
 
-ol {
-  grid-area: main;
+  list-style-type: none;
+  margin: 0;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 h1 {
@@ -31,6 +31,7 @@ h1 {
   font-family: "Denk One", sans-serif;
   margin: 0;
   padding: .75rem;
+  padding-top: .9rem;
 }
 
 h2 {
@@ -38,38 +39,29 @@ h2 {
   font-family: "Denk One", sans-serif;
 }
 
-ol {
-  list-style-type: none;
-  margin: 0;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-}
-
 ol li {
-  width: 20em;
-  padding: 0 .6rem;
+  width: 100%;
+  margin: 0;
+  padding: 0 .75rem;
+  padding-bottom: 1rem;
   background-color: #ede3db;
   border: 2px solid #623b0c;
-  border-radius: 8px;
+  border-radius: 8px;s
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   flex-grow: 1;
 }
 
-main ol li a {
+li a {
   color: #f5f2f0;
   border: 2px solid #623b0c;
   background-color: #623b0c;
   border-radius: 8px;
   text-decoration: none;
 
-  padding: .6rem 1rem;
+  padding: .5rem 1rem;
 }
