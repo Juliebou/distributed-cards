@@ -19,4 +19,49 @@ body {
 h1 {
   color: #623b0c;
   font-family: 'Denk One', sans-serif;
+  font-size: 1.5em;
+}
+
+h2 {
+  color: #623b0c;
+  font-family: 'Denk One', sans-serif;
+  font-size: 1em;
+}
+
+main ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5 1rem;
+}
+
+ol {
+  list-style-type: none;
+  padding: .5em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+padding-top: .75em;
+}
+
+ol li {
+  width: 20em;
+  padding: 1rem;
+  background-color: #ede3db;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+@media only screen and (min-width: 40em) {
+
+ol {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
